@@ -3,7 +3,7 @@
   font-style: normal;
   font-format: truetype;
   font-weight: 400;
-  src: url("leaguespartan-variablefont_wght.ttf") ;
+  src: url('leaguespartan-variablefont_wght.ttf') ;
 }
  
 @font-face {
@@ -11,7 +11,7 @@
   font-style: normal;
   font-format: truetype;
   font-weight: 400;
-  src: url("chewy-regular.ttf") ;
+  src: url('chewy-regular.ttf') ;
 }
  
 :root {
