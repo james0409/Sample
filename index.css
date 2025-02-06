@@ -1,4 +1,20 @@
 
+@font-face {
+  font-family: "LeagueSpartan-Thin";
+  font-style: normal;
+  font-format: truetype;
+  font-weight: 400;
+  src: url('leaguespartan-variablefont_wght.ttf') ;
+}
+ 
+@font-face {
+  font-family: "Chewy-Regular";
+  font-style: normal;
+  font-format: truetype;
+  font-weight: 400;
+  src: url('chewy-regular.ttf') ;
+}
+
  html {  line-height: 1.15;}
  body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}
  p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}
