@@ -265,11 +265,11 @@ body {
   }
 
   .home-text1 {
-    font-size: 5vw;
+    font-size: 12vw;
   }
 
   .home-text2 {
-    font-size: 3vw;
+    font-size: 10vw;
   }
 
   .home-button {
@@ -277,10 +277,19 @@ body {
     height: 5vh;
   }
 
-  .home-link1,
-  .home-link2,
+   .home-link2 {
+    bottom: 25vh;
+  }
+
+
+  .home-link1 {
+    bottom: 19vh;
+    left: 11.6vh;
+  }
+
+
   .home-link3 {
-    font-size: 12px;
-    bottom: 10vh;
+    bottom: 13vh;
+    left: 11.6vh;
   }
 }
