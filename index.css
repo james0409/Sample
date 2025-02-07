@@ -1,40 +1,23 @@
-
 @font-face {
   font-family: "LeagueSpartan-Thin";
   font-style: normal;
-  font-format: truetype;
   font-weight: 400;
-  src: url('leaguespartan-variablefont_wght.ttf') ;
+  src: url('leaguespartan-variablefont_wght.ttf') format('truetype');
 }
- 
+
 @font-face {
   font-family: "Chewy-Regular";
   font-style: normal;
-  font-format: truetype;
   font-weight: 400;
-  src: url('chewy-regular.ttf') ;
+  src: url('chewy-regular.ttf') format('truetype');
 }
 
- html {  line-height: 1.15;}
- body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}
- p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}
- button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}
- button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}
- button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}
- button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}
- a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}
- details {  display: block;  margin: 0;  padding: 0;}
- summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"]
-  {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"]
-   details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}
-   details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}
- html { scroll-behavior: smooth  }
-
 html {
-        font-family: Inter;
-        font-size: 16px;
-      }
-
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  line-height: 1.15;
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -43,17 +26,80 @@ body {
   text-decoration: none;
   text-transform: none;
   letter-spacing: normal;
-  line-height: 1.15;
   color: var(--dl-color-theme-neutral-dark);
   background: var(--dl-color-theme-neutral-light);
   fill: var(--dl-color-theme-neutral-dark);
 }
 
+* {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  -webkit-font-smoothing: antialiased;
+}
+
+p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  border: none;
+}
+
+button, select {
+  text-transform: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+input {
+  padding: 2px 4px;
+}
+
+img {
+  display: block;
+}
+
+details {
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Accordion */
+[data-thq="accordion"] [data-thq="accordion-content"] {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  padding: 0;
+}
+
+[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {
+  max-height: 1000vh;
+}
+
+details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {
+  transform: rotate(180deg);
+}
+
+/* Main Container */
 .home-container1 {
   width: 100%;
   min-height: 100vh;
   display: grid;
-  place-items: end start;
+  align-items: end;
+  justify-items: start;
   background-size: cover;
   background-image: url('background.jpg');
   background-repeat: no-repeat;
@@ -61,7 +107,7 @@ body {
   padding: 20px;
 }
 
-/* Make container responsive */
+/* Responsive Content Box */
 .home-container2 {
   top: 10vh;
   left: 50%;
@@ -72,32 +118,19 @@ body {
   transform: translateX(-50%);
 }
 
-/* Responsive images */
-.home-image1,
-.home-image2,
-.home-image3 {
+/* Responsive Images */
+.home-image1, .home-image2, .home-image3 {
   width: 11vw;
   max-width: 150px;
   position: absolute;
   object-fit: cover;
 }
 
-.home-image1 {
-  top: 0;
-  right: 2%;
-}
+.home-image1 { top: 0; right: 2%; }
+.home-image2 { top: 0; left: 0; }
+.home-image3 { top: 0; left: 38%; }
 
-.home-image2 {
-  top: 0;
-  left: 0;
-}
-
-.home-image3 {
-  top: 0;
-  left: 38%;
-}
-
-/* Responsive text container */
+/* Responsive Text */
 .home-container3 {
   top: 35vh;
   left: 50%;
@@ -113,7 +146,6 @@ body {
   transform: translateX(-50%);
 }
 
-/* Responsive text sizes */
 .home-text1 {
   color: #fff163;
   font-size: clamp(2rem, 8vw, 136.9px);
@@ -126,51 +158,29 @@ body {
   font-family: "LeagueSpartan-Thin", sans-serif;
 }
 
-/* Links positioned at bottom */
-.home-link1,
-.home-link2,
-.home-link3 {
+/* Footer Links */
+.home-link1, .home-link2, .home-link3 {
   color: #ffffff;
   font-size: clamp(1rem, 2vw, 20px);
   position: absolute;
   bottom: 10vh;
 }
 
-/* Adjust icon positions */
-.home-icon10,
-.home-icon12,
-.home-icon17 {
+.home-link1 { left: 70%; }
+.home-link2 { left: 20%; }
+.home-link3 { left: 53%; }
+
+/* Footer Icons */
+.home-icon10, .home-icon12, .home-icon17 {
   position: absolute;
   bottom: 9vh;
 }
 
-/* Responsive footer links */
-.home-link1 {
-  left: 70%;
-}
+.home-icon17 { left: 67.5%; }
+.home-icon10 { left: 17.5%; }
+.home-icon12 { left: 50.6%; }
 
-.home-link2 {
-  left: 20%;
-}
-
-.home-link3 {
-  left: 53%;
-}
-
-.home-icon17 {
-  left: 67.5%;
-}
-
-.home-icon10 {
-  left: 17.5%;
-}
-
-.home-icon12 {
-  left: 50.6%;
-}
-
-
-/* Responsive button */
+/* Button */
 .home-button {
   top: 68vh;
   left: 50%;
@@ -179,134 +189,45 @@ body {
   height: 7vh;
   max-height: 77px;
   font-size: clamp(1rem, 3vw, 30px);
-  border: none;
   border-radius: 50px;
   background-color: #fff163;
   position: absolute;
   transform: translateX(-50%);
 }
 
-/* Responsive adjustments for smaller screens */
+/* Media Queries */
 @media (max-width: 1024px) {
-  .home-container2 {
-    width: 70%;
-  }
-
-  .home-image1,
-  .home-image2,
-  .home-image3 {
-    width: 15vw;
-  }
+  .home-container2 { width: 70%; }
+  .home-image1, .home-image2, .home-image3 { width: 15vw; }
 }
 
 @media (max-width: 768px) {
-  .home-container2 {
-    width: 80%;
-  }
+  .home-container2 { width: 80%; }
+  .home-image1, .home-image2, .home-image3 { width: 18vw; }
+  .home-container3 { top: 40vh; }
+  .home-button { top: 55vh; width: 20vw; }
 
-  .home-image1,
-  .home-image2,
-  .home-image3 {
-    width: 18vw;
-  }
+  .home-link1 { bottom: 19vh; left: 11.6vh; }
+  .home-link2 { bottom: 25vh; }
+  .home-link3 { bottom: 13vh; left: 11.6vh; }
 
-  .home-container3 {
-    top: 40vh;
-  }
-
-  .home-button {
-    top: 55vh;
-    width: 20vw;
-  }
-
-
-  .home-link2 {
-    bottom: 25vh;
-  }
-
-
-  .home-link1 {
-    bottom: 19vh;
-    left: 11.6vh;
-  }
-
-
-  .home-link3 {
-    bottom: 13vh;
-    left: 11.6vh;
-  }
-
-
-.home-icon17 {
-  bottom: 12vh;
-  left: 6vh;
+  .home-icon17 { bottom: 12vh; left: 6vh; }
+  .home-icon10 { bottom: 24.5vh; left: 6vh; }
+  .home-icon12 { bottom: 18.5vh; left: 6vh; }
 }
-
-.home-icon10 {
-  bottom: 24.5vh;
-  left: 6vh;
-}
-
-.home-icon12 {
-  bottom: 18.5vh;
-  left: 6vh;
-}
-
 
 @media (max-width: 480px) {
-  .home-container2 {
-    width: 90%;
-  }
+  .home-container2 { width: 90%; }
+  .home-image1, .home-image2, .home-image3 { top: 5vh; width: 20vw; }
+  .home-text1 { font-size: 15vw; top: 10vh; }
+  .home-text2 { font-size: 9vw; top: 15vh; }
+  .home-button { width: 20vw; height: 5vh; }
 
-  .home-image1,
-  .home-image2,
-  .home-image3 {
-    top: 5vh;
-    width: 20vw;
-  }
+  .home-link1 { bottom: 16vh; left: 12vh; }
+  .home-link2 { bottom: 22vh; left: 12vh; }
+  .home-link3 { bottom: 10vh; left: 12vh; }
 
-  .home-text1 {
-    font-size: 15vw;
-    top: 10vh;
-  }
-
-  .home-text2 {
-    font-size: 9vw;
-    top: 15vh;
-  }
-
-  .home-button {
-    width: 20vw;
-    height: 5vh;
-  }
-
-   .home-link2 {
-    bottom: 22vh;
-     left:12vh;
-  }
-
-
-  .home-link1 {
-    bottom: 16vh;
-    left: 12vh;
-  }
-
-
-  .home-link3 {
-    bottom: 10vh;
-    left: 12vh;
-  }
-
-  .home-icon17 {
-  bottom: 9vh;
-}
-
-.home-icon10 {
-  bottom: 21vh;
-}
-
-.home-icon12 {
-  bottom: 15vh;
-
-}
+  .home-icon17 { bottom: 9vh; }
+  .home-icon10 { bottom: 21vh; }
+  .home-icon12 { bottom: 15vh; }
 }
