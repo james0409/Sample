@@ -266,12 +266,12 @@ body {
 
   .home-text1 {
     font-size: 15vw;
-    top: 30vh;
+    top: 20vh;
   }
 
   .home-text2 {
     font-size: 12vw;
-    top: 35vh;
+    top: 25vh;
   }
 
   .home-button {
@@ -280,19 +280,19 @@ body {
   }
 
    .home-link2 {
-    bottom: 25vh;
+    bottom: 22vh;
      left:12vh;
   }
 
 
   .home-link1 {
-    bottom: 19vh;
+    bottom: 16vh;
     left: 12vh;
   }
 
 
   .home-link3 {
-    bottom: 13vh;
+    bottom: 10vh;
     left: 12vh;
   }
 }
