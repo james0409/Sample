@@ -261,17 +261,18 @@ body {
   .home-image1,
   .home-image2,
   .home-image3 {
+    top: 5vh;
     width: 20vw;
   }
 
   .home-text1 {
     font-size: 15vw;
-    top: 15vh;
+    top: 10vh;
   }
 
   .home-text2 {
-    font-size: 10vw;
-    top: 20vh;
+    font-size: 9vw;
+    top: 15vh;
   }
 
   .home-button {
@@ -297,15 +298,15 @@ body {
   }
 
   .home-icon17 {
-  bottom: 10vh;
+  bottom: 9vh;
 }
 
 .home-icon10 {
-  bottom: 22vh;
+  bottom: 21vh;
 }
 
 .home-icon12 {
-  bottom: 16vh;
+  bottom: 15vh;
 
 }
 }
