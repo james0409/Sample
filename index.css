@@ -266,12 +266,12 @@ body {
 
   .home-text1 {
     font-size: 15vw;
-    top: 20vh;
+    top: 15vh;
   }
 
   .home-text2 {
-    font-size: 12vw;
-    top: 25vh;
+    font-size: 10vw;
+    top: 20vh;
   }
 
   .home-button {
@@ -295,4 +295,17 @@ body {
     bottom: 10vh;
     left: 12vh;
   }
+
+  .home-icon17 {
+  bottom: 10vh;
+}
+
+.home-icon10 {
+  bottom: 22vh;
+}
+
+.home-icon12 {
+  bottom: 16vh;
+
+}
 }
